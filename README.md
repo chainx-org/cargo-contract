@@ -1,4 +1,4 @@
-# Cargo plugin for [`ink!`](https://github.com/paritytech/ink) contracts
+# Cargo plugin for [`ink!`](https://github.com/chainx-org/ink) contracts
 
 **IMPORTANT NOTE:** WORK IN PROGRESS! Do not expect this to be working. 
 
@@ -6,7 +6,7 @@ A small CLI tool for helping setting up and managing WebAssembly smart contracts
 
 ## Installation
 
-`cargo install --git https://github.com/paritytech/cargo-contract cargo-contract --force`
+`cargo install --git https://github.com/chainx-org/cargo-contract cargo-contract --force`
 
 Use the --force to ensure you are updated to the most recent cargo-contract version.
 
