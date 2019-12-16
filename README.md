@@ -6,7 +6,7 @@ A small CLI tool for helping setting up and managing WebAssembly smart contracts
 
 ## Installation
 
-`cargo install --git https://github.com/chainx-org/cargo-contract cargo-contract --force`
+`cargo install --git https://github.com/chainx-org/cargo-contract --branch ink2.0 cargo-contract --force`
 
 Use the --force to ensure you are updated to the most recent cargo-contract version.
 
