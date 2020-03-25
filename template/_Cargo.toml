@@ -6,11 +6,11 @@ edition = "2018"
 
 [dependencies]
 ink_abi = { git = "https://github.com/chainx-org/ink", branch = "env-revision3", package = "ink_abi", default-features = false, features = ["derive"], optional = true }
-ink_primitives = { version = "2", git = "https://github.com/chainx-org/ink", tag = "env-revision3", package = "ink_primitives", default-features = false, features = ["old-codec"] }
+ink_primitives = { git = "https://github.com/chainx-org/ink", branch = "env-revision3", package = "ink_primitives", default-features = false, features = ["old-codec"] }
 ink_core = { git = "https://github.com/chainx-org/ink", tag = "env-revision3", package = "ink_core", default-features = false, features = ["old-codec"] }
 ink_lang = { git = "https://github.com/chainx-org/ink", tag = "env-revision3", package = "ink_lang", default-features = false, features = ["old-codec"] }
 
-scale = { package = "parity-scale-codec", version = "1.2", default-features = false, features = ["derive"] }
+scale = { package = "parity-codec", version = "3.5", default-features = false, features = ["derive"] }
 
 [dependencies.type-metadata]
 git = "https://github.com/type-metadata/type-metadata.git"
