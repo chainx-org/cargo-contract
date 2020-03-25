@@ -13,7 +13,7 @@ A CLI tool for helping setting up and managing WebAssembly smart contracts writt
 - **rust-src**: `rustup component add rust-src`
 - **wasm-opt**: https://github.com/WebAssembly/binaryen#tools
 
-`cargo install --git https://github.com/paritytech/cargo-contract cargo-contract --force`
+`cargo install --git https://github.com/chainx-org/cargo-contract cargo-contract --branch ink-v2.0 --force`
 
 Use the --force to ensure you are updated to the most recent cargo-contract version.
 
