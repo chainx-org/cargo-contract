@@ -1,3 +1,17 @@
+# Cargo plugin for [`ink!`](https://github.com/chainx-org/ink) contracts
+
+This is a fork version of original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract) for ChainX smart contract.
+
+Main changes:
+
+- Enable `old-codec` feature in the [chainx-org/ink](https://github.com/chainx-org/ink) in the contract template.
+- Use `env = DefaultXrmlTypes` for the ChainX specific smart contracts.
+
+The other usageskjare exactly same to the original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract), see `cargo-contract contract --help`.
+
+
+-----------------------------
+
 # Cargo plugin for [`ink!`](https://github.com/paritytech/ink) contracts
 
 [![GitHub license](https://img.shields.io/github/license/paritytech/cargo-contract)](LICENSE) 
@@ -13,7 +27,7 @@ A CLI tool for helping setting up and managing WebAssembly smart contracts writt
 - **rust-src**: `rustup component add rust-src`
 - **wasm-opt**: https://github.com/WebAssembly/binaryen#tools
 
-`cargo install --git https://github.com/chainx-org/cargo-contract cargo-contract --branch ink-v2.0 --force`
+`cargo install --git https://github.com/chainx-org/cargo-contract cargo-contract --force`
 
 Use the --force to ensure you are updated to the most recent cargo-contract version.
 
