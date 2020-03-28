@@ -7,7 +7,7 @@ Main changes:
 - Enable `old-codec` feature in the [chainx-org/ink](https://github.com/chainx-org/ink) in the contract template.
 - Use `env = DefaultXrmlTypes` for the ChainX specific smart contracts.
 
-The other usageskjare exactly same to the original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract), see `cargo-contract contract --help`.
+The other usages are exactly same to the original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract), see `cargo-contract contract --help`.
 
 -----------------------------
 
