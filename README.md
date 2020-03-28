@@ -9,7 +9,6 @@ Main changes:
 
 The other usageskjare exactly same to the original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract), see `cargo-contract contract --help`.
 
-
 -----------------------------
 
 # Cargo plugin for [`ink!`](https://github.com/paritytech/ink) contracts
