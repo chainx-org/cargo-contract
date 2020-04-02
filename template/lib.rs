@@ -2,9 +2,10 @@
 
 use ink_lang as ink;
 
-#[ink::contract(version = "0.1.0")]
+#[ink::contract(version = "0.1.0", env = DefaultXrmlTypes)]
 mod {{name}} {
-    use ink_core::storage;
+    use ink_core::{env::DefaultXrmlTypes, storage};
+
 
     /// Defines the storage of your contract.
     /// Add new fields to the below struct in order
