@@ -9,6 +9,15 @@ Main changes:
 
 The other usages are exactly same to the original [paritytech/cargo-contract](https://github.com/paritytech/cargo-contract), see `cargo-contract contract --help`.
 
+We also provide a Docker environment for building the contract in case of you want to try it but don't have the building requirements:
+
+```bash
+$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.0 cargo contract build
+# Once this command completes, the compiled wasm file will be present in target/XXX.wasm.
+```
+
+Building the contract via Docker also guarantees the compiled wasm file per contract is identical everytime and everywhere, no matter which OS you are using.
+
 -----------------------------
 
 # Cargo plugin for [`ink!`](https://github.com/paritytech/ink) contracts
