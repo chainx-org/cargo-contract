@@ -1,6 +1,6 @@
 FROM phusion/baseimage:0.10.2 as builder
 LABEL maintainer "xuliuchengxlc@gmail.com"
-LABEL description="The build stage for cargo-contract."
+LABEL description="The docker environment for building substrate Ink contract using cargo-contract."
 
 ARG PROFILE=release
 ARG APP=cargo-contract
