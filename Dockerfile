@@ -7,6 +7,8 @@ ARG APP=cargo-contract
 
 WORKDIR /$APP
 
+COPY . /$APP
+
 ENV RUSTUP_HOME=/rust \
     CARGO_HOME=/cargo \
     PATH=/cargo/bin:/rust/bin:$PATH
@@ -27,4 +29,4 @@ RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain nightly --n
         rustup component add rust-src && \
         rustup target add wasm32-unknown-unknown
 
-RUN cargo build --$PROFILE && cp target/$PROFILE/$APP /usr/local/bin
+RUN cargo build --$PROFILE && cp target/$PROFILE/$APP /usr/local/bin && rm -rf /$APP/*
