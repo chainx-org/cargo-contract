@@ -21,6 +21,10 @@ Build the contract using the above built image:
 
 ```bash
 $ docker run --rm -v "$PWD":/cargo-contract chainxorg/contract-builder cargo contract build
+=======
+```bash
+$ docker run --rm -v "$PWD":/build -w /build chainxorg/contract-builder:v0.6.1 cargo contract build
+>>>>>>> 69d9c7c7e855963efd110107f002e3f1bd253fe2
 # Once this command completes, the compiled wasm file will be present in target/XXX.wasm.
 ```
 
