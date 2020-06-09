@@ -22,7 +22,7 @@ RUN cd /tmp && \
     cd binaryen && \
     cmake . && \
     make && \
-    cp /tmp/binaryen/bin/wasm-opt /usr/local/bin
+    ln -s $PWD/bin/wasm-opt /usr/local/bin/wasm-opt
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain nightly --no-modify-path && \
         rustup default nightly && \
